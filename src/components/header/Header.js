@@ -1,22 +1,34 @@
 import React from "react";
 import * as styles from "./Header.module.scss";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <a href="/" className={styles.header__title}>
+      <NavLink to="/" className={styles.header__title}>
         <span>Chloe Williams</span>
-      </a>
+      </NavLink>
       <nav>
         <ul className={styles.nav_links}>
           <li>
-            <a href="/">About</a>
+            <NavLink activeClassName={styles.active} to="/" exact>
+              About
+            </NavLink>
           </li>
           <li>
-            <a href="/">Skills</a>
+            <NavLink activeClassName={styles.active} to="/work">
+              My Work
+            </NavLink>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <NavLink activeClassName={styles.active} to="/skills">
+              Skills
+            </NavLink>
+          </li>
+          <li>
+            <NavLink activeClassName={styles.active} to="/contact">
+              Contact
+            </NavLink>
           </li>
         </ul>
       </nav>
