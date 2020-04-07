@@ -3,7 +3,7 @@ import * as styles from "./Skills.module.scss";
 import marketing_logo from "../../assets/marketing-icon.png";
 import ux_logo from "../../assets/ux-research.png";
 import web_logo from "../../assets/web-icon2.png";
-import Skill from "../../components/skill/Skill";
+import { Skill } from "../../components";
 
 const Skills = () => {
   const [skillsData] = useState([

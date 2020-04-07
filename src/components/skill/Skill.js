@@ -13,6 +13,4 @@ const Skill = ({ name, content, image }) => {
   );
 };
 
-
-
 export default Skill;
